@@ -6,7 +6,7 @@
 
 <script setup>
 import Weather from './Wheater.vue'
-import { defineProps, ref, watch } from 'vue'; /* Nos ayuda a definir propiedades que podemos recibir desdfe un componente prade*/
+import { defineProps, ref, watch } from 'vue'; /* Nos ayuda a definir propiedades que podemos recibir desde un componente prade*/
 const props = defineProps(['mensaje']) /*  definepropr esta esperando un arreglo con las propiedades*/
 const mensajeRecibido = ref(props.mensaje);
 watch(() => props.mensaje, (newValue)=>{/* Esto sirve para que watch mantenga escuchando la variuable mensaje ya que esta no es reactiva en este componente */
